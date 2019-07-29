@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" name="viewport" content="width=device-width min-height=device-height" />
+        <title>Chat</title>
+		<link rel="stylesheet" type="text/css" href="chat.css"/>
+    </head>
+    <body class = "Font_Arial Theme_Green">
+    <div class = "profile Theme_Green">
+		<img src = "" alt = "profile" />
+		<p>
+			Никнейм <br />
+			Дата регистрации
+		</p>
+		<button type = "button" id = "rename">Сменить никнейм</button>
+		<button type = "button" id = "reimg">Сменить изображение</button>
+		<button type = "button" id = "logout">Выход</button>
+	</div>
+		
+	<div class = "level1">
+			
+		<div class = "custom Theme_Green">
+			<p>
+				Выберите 
+				шрифт
+			</p>
+			<button type = "button" id = "font_arial" class = "pushedButton exceptButton" disabled>AaBbCc</button>
+			<button type = "button" id = "font_georgia" class = "exceptButton">AaBbCc</button>
+			<button type = "button" id = "font_courier" class = "exceptButton">AaBbCc</button>
+			<p>
+				Выберите 
+				тему 
+				страницы
+			</p>
+			<button type = "button" id = "theme_green" class = "pushedButton exceptButton" disabled></button>
+			<button type = "button" id = "theme_blue" class = "exceptButton"></button>
+			<button type = "button" id = "theme_yellow" class = "exceptButton"></button>
+			<p>
+				Выберите 
+				цвет 
+				никнейма
+			</p>
+			<button type = "button" id = "nick_black" class = "pushedButton exceptButton" disabled></button>
+			<button type = "button" id = "nick_red" class = "exceptButton"></button>
+			<button type = "button" id = "nick_purple" class = "exceptButton"></button>
+			<button type = "button" id = "nick_green" class = "exceptButton"></button>
+			<button type = "button" id = "nick_blue" class = "exceptButton"></button>
+		</div>
+			
+		<div class = "level2">
+		
+			<div class = "chatbox Theme_Green">
+					<textarea readonly id = "chat_window"></textarea>
+					<textarea readonly id = "user_list"></textarea>
+			</div>
+			
+			<div class = "input Theme_Green">
+				<form method="get" autocomplete="off" action="http://localhost:8080/login.php">
+					<textarea id = "input_box" name="message" placeholder = "Введите ваше сообщение"></textarea>
+					<input id = "input_button" type="submit" value="Отправить" />
+				</form>
+			</div>
+			
+		</div>
+		
+	</div>
+	<script src="chat.js"></script>
+    </body>
+</html>
